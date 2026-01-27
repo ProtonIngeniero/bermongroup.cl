@@ -2,6 +2,9 @@
 
 Sitio web corporativo de Bermon Group, orientado a servicios de
 seguridad, análisis de riesgos y tecnología aplicada.
+Este proyecto forma parte del ecosistema Bermon Group, orientado a soluciones de seguridad operacional, monitoreo centralizado y toma de decisiones en tiempo real.
+
+La arquitectura del sitio y sus futuras extensiones (dashboards, paneles de control, módulos de monitoreo) están diseñadas para entornos de seguridad corporativa, retail y centrales de vigilancia remota.
 
 El sitio está diseñado como una aplicación web estática, liviana,
 segura y fácilmente desplegable en cualquier servicio de hosting.
