@@ -2,39 +2,137 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Bermon Group</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <title>Bermon Group</title>
+
+  <!-- Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#121417;
+      --text-main:#e5e7eb;
+      --text-soft:#9ca3af;
+      --accent:#c6a664;
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    body{
+      margin:0;
+      font-family:'Inter',sans-serif;
+      background:var(--bg);
+      color:var(--text-main);
+    }
+
+    /* HERO */
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:0 24px;
+    }
+
+    .hero-inner{
+      max-width:900px;
+    }
+
+    .brand{
+      font-size:46px;
+      font-weight:600;
+      letter-spacing:0.28em;
+      margin-bottom:24px;
+    }
+
+    .tagline{
+      font-size:17px;
+      line-height:1.6;
+      color:var(--text-soft);
+      margin-bottom:36px;
+    }
+
+    .divider{
+      width:80px;
+      height:1px;
+      background:var(--accent);
+      margin:0 auto;
+    }
+
+    /* CONTENT */
+    .content{
+      max-width:900px;
+      margin:0 auto;
+      padding:120px 24px;
+    }
+
+    .section-title{
+      font-size:13px;
+      letter-spacing:0.18em;
+      text-transform:uppercase;
+      color:var(--accent);
+      margin-bottom:18px;
+    }
+
+    .text{
+      font-size:16px;
+      line-height:1.7;
+      color:var(--text-main);
+      max-width:720px;
+    }
+
+    .contact{
+      margin-top:80px;
+      font-size:15px;
+      line-height:1.8;
+      color:var(--text-soft);
+    }
+
+    .contact a{
+      color:var(--text-main);
+      text-decoration:none;
+    }
+
+    .contact a:hover{
+      text-decoration:underline;
+    }
+  </style>
 </head>
-
 <body>
-
-  <!-- HEADER -->
-  <header class="site-header">
-    <img src="img/bermon-logo.png" alt="Bermon Group" class="logo">
-  </header>
 
   <!-- HERO -->
   <section class="hero">
-    <h1>Bermon Group</h1>
-    <p>Tecnología y soluciones inteligentes para seguridad y control operativo.</p>
+    <div class="hero-inner">
+      <div class="brand">BERMON GROUP</div>
+      <div class="tagline">
+        Ingeniería y tecnología aplicada a la seguridad<br>
+        y al control operativo.
+      </div>
+      <div class="divider"></div>
+    </div>
   </section>
 
-  <!-- CONTENIDO BASE -->
+  <!-- CONTENT -->
   <section class="content">
-    <h2>Qué hacemos</h2>
-    <p>
-      Desarrollamos soluciones tecnológicas y operativas orientadas a la seguridad,
-      el control interno y la toma de decisiones, integrando experiencia en terreno
-      con desarrollo digital.
-    </p>
-  </section>
+    <div class="section-title">Qué hacemos</div>
+    <div class="text">
+      Diseñamos soluciones tecnológicas y sistemas de apoyo
+      para operaciones críticas, seguridad y control,
+      integrando experiencia en terreno con desarrollo digital.
+    </div>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <p>© Bermon Group SpA · Santiago, Chile</p>
-    <p>contacto@bermongroup.cl · www.bermongroup.cl</p>
-  </footer>
+    <div class="section-title" style="margin-top:80px;">Contacto</div>
+    <div class="contact">
+      contacto@bermongroup.cl<br>
+      www.bermongroup.cl<br>
+      Santiago, Chile
+    </div>
+  </section>
 
 </body>
 </html>
