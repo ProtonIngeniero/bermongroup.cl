@@ -9,38 +9,73 @@
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background: #0e0e0e;
+            background: #0b0f14;
             color: white;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
+            line-height: 1.6;
         }
 
         header {
-            padding: 40px 20px;
             text-align: center;
+            padding: 60px 20px;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2.8em;
+            letter-spacing: 3px;
         }
 
-        main {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        header p {
+            color: #aaa;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
             text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #222;
+            padding-bottom: 10px;
+        }
+
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #111;
             padding: 20px;
+            border: 1px solid #222;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #1f6feb;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
         }
 
         footer {
-            background: #111;
+            margin-top: 40px;
+            background: #0d1117;
             text-align: center;
             padding: 20px;
-            font-size: 0.9em;
             border-top: 1px solid #222;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -48,15 +83,51 @@
 <body>
 
 <header>
-    <h1>Bermon Group</h1>
+    <h1>BERMON GROUP</h1>
+    <p>Soluciones Tecnológicas para la Seguridad Operativa</p>
 </header>
 
-<main>
-    <div>
-        <h2>Soluciones Tecnológicas para la Seguridad Operativa</h2>
-        <p>Desarrollamos plataformas de monitoreo, control y gestión para organizaciones modernas.</p>
+<section>
+    <h2>Productos</h2>
+    <div class="productos">
+        <div class="card">
+            <h3>Central de Control Operativo</h3>
+            <p>Monitoreo en tiempo real, gestión de incidentes y coordinación de respuesta.</p>
+        </div>
+
+        <div class="card">
+            <h3>Consulta Precios</h3>
+            <p>Acceso inmediato a información de productos para clientes y equipos de tienda.</p>
+        </div>
+
+        <div class="card">
+            <h3>Gestión Inteligente de Rondas</h3>
+            <p>Trazabilidad GPS, control de cumplimiento y reportabilidad digital.</p>
+        </div>
     </div>
-</main>
+</section>
+
+<section>
+    <h2>Experiencia</h2>
+    <p style="text-align:center;">
+        Soluciones diseñadas para retail, instalaciones críticas, energía y operaciones de seguridad.
+    </p>
+</section>
+
+<section>
+    <h2>Acceso a Plataformas</h2>
+    <p style="text-align:center;">
+        <a class="btn" href="#">Central de Control</a>
+        <a class="btn" href="#">Consulta Precios</a>
+    </p>
+</section>
+
+<section>
+    <h2>Contacto</h2>
+    <p style="text-align:center;">
+        contacto@bermongroup.cl
+    </p>
+</section>
 
 <footer>
     <p><strong>Bermon Group</strong></p>
