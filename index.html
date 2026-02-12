@@ -1,152 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bermon Group</title>
+    <meta charset="UTF-8">
+    <title>Bermon Group | Ingeniería en Seguridad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Inter -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0e0e0e;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
-  <style>
-    :root{
-      --bg:#16181c;          /* grafito profundo */
-      --panel:#1f2228;       /* fondo contenido */
-      --text-main:#e6e7eb;   /* texto principal */
-      --text-soft:#a6abb4;   /* texto secundario */
-      --accent:#c6a664;      /* acento dorado apagado */
-    }
+        header {
+            padding: 40px 20px;
+            text-align: center;
+        }
 
-    *{
-      box-sizing:border-box;
-    }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
 
-    body{
-      margin:0;
-      font-family:'Inter',sans-serif;
-      background:var(--bg);
-      color:var(--text-main);
-    }
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
 
-    /* ===== HERO ===== */
-    .hero{
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:64px 24px;
-    }
-
-    .hero-inner{
-      width:100%;
-      max-width:1200px;
-      text-align:center;
-    }
-
-    .brand{
-      font-size:clamp(42px, 6vw, 72px);
-      font-weight:500;
-      letter-spacing:0.34em;
-      margin-bottom:28px;
-    }
-
-    .tagline{
-      font-size:clamp(16px, 2.2vw, 20px);
-      line-height:1.6;
-      color:var(--text-soft);
-      max-width:760px;
-      margin:0 auto 40px auto;
-    }
-
-    .divider{
-      width:96px;
-      height:1px;
-      background:var(--accent);
-      margin:0 auto;
-    }
-
-    /* ===== CONTENT ===== */
-    .content{
-      background:var(--panel);
-      padding:120px 24px;
-    }
-
-    .content-inner{
-      max-width:1100px;
-      margin:0 auto;
-    }
-
-    .section-title{
-      font-size:13px;
-      letter-spacing:0.22em;
-      text-transform:uppercase;
-      color:var(--accent);
-      margin-bottom:22px;
-    }
-
-    .text{
-      font-size:17px;
-      line-height:1.75;
-      color:var(--text-main);
-      max-width:820px;
-    }
-
-    .contact{
-      margin-top:96px;
-      font-size:15px;
-      line-height:1.9;
-      color:var(--text-soft);
-    }
-
-    .contact a{
-      color:var(--text-main);
-      text-decoration:none;
-    }
-
-    .contact a:hover{
-      text-decoration:underline;
-    }
-  </style>
+        footer {
+            background: #111;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            border-top: 1px solid #222;
+        }
+    </style>
 </head>
+
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-inner">
-      <div class="brand">BERMON&nbsp;GROUP</div>
+<header>
+    <h1>Bermon Group</h1>
+</header>
 
-      <div class="tagline">
-        Ingeniería y tecnología aplicada a la seguridad,<br>
-        control operativo y desarrollo de sistemas.
-      </div>
-
-      <div class="divider"></div>
+<main>
+    <div>
+        <h2>Soluciones Tecnológicas para la Seguridad Operativa</h2>
+        <p>Desarrollamos plataformas de monitoreo, control y gestión para organizaciones modernas.</p>
     </div>
-  </section>
+</main>
 
-  <!-- CONTENT -->
-  <section class="content">
-    <div class="content-inner">
-
-      <div class="section-title">Qué hacemos</div>
-      <div class="text">
-        Desarrollamos soluciones tecnológicas orientadas a la seguridad,
-        el control interno y la toma de decisiones, integrando experiencia
-        operativa con desarrollo de software y sistemas de apoyo para
-        entornos críticos.
-      </div>
-
-      <div class="section-title" style="margin-top:96px;">Contacto</div>
-      <div class="contact">
-        contacto@bermongroup.cl<br>
-        www.bermongroup.cl<br>
-        Santiago, Chile
-      </div>
-
-    </div>
-  </section>
+<footer>
+    <p><strong>Bermon Group</strong></p>
+    <p>Ingeniería en Seguridad y Soluciones Tecnológicas</p>
+    <p>© 2026 · Todos los derechos reservados</p>
+</footer>
 
 </body>
 </html>
