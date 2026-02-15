@@ -135,5 +135,34 @@
     <p>© 2026 · Todos los derechos reservados</p>
 </footer>
 
-</body>
-</html>
+<script>
+let saludoReproducido = false;
+
+function hablarBienvenida() {
+    if (saludoReproducido) return;
+
+    const synth = window.speechSynthesis;
+
+    // asegurar que las voces estén listas
+    let voces = synth.getVoices();
+    if (!voces.length) {
+        synth.onvoiceschanged = hablarBienvenida;
+        return;
+    }
+
+    const mensaje = new SpeechSynthesisUtterance(
+        "Bienvenido a Bermon Group, Soluciones Tecnológicas"
+    );
+
+    mensaje.lang = "es-ES";
+    mensaje.rate = 1;
+    mensaje.pitch = 1;
+    mensaje.volume = 1;
+
+    synth.speak(mensaje);
+    saludoReproducido = true;
+}
+
+// primer clic real del usuario
+document.body.addEventListener("click", hablarBienvenida, { once: true });
+</script>
