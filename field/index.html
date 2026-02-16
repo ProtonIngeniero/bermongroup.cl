@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Bermon Field</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#0b0f14;
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:20px;
+    background:#111;
+    border-bottom:1px solid #222;
+}
+
+h1{
+    margin:0;
+    font-size:22px;
+}
+
+.container{
+    padding:20px;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    margin-bottom:18px;
+    background:#1a1a1a;
+    border:1px solid #333;
+    color:white;
+    border-radius:5px;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    background:#1f6feb;
+    border:none;
+    color:white;
+    font-size:18px;
+    border-radius:5px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>BERMON FIELD</h1>
+    <div>Operaciones en Terreno</div>
+</header>
+
+<div class="container">
+
+<label>Nombre del guardia</label>
+<input id="guardia" placeholder="Ej: Juan Pérez">
+
+<label>Instalación</label>
+<input id="instalacion" placeholder="Ej: Local Centro">
+
+<label>Tipo</label>
+<select id="tipo">
+    <option value="INFO">Información</option>
+    <option value="RONDA">Ronda</option>
+    <option value="INCIDENTE">Incidente</option>
+    <option value="PANICO">Pánico</option>
+</select>
+
+<label>Mensaje</label>
+<textarea id="mensaje" rows="4" placeholder="Detalle de la situación"></textarea>
+
+<button onclick="enviar()">Enviar a Central</button>
+
+</div>
+
+<script>
+function enviar(){
+
+    const data = {
+        tipo: document.getElementById("tipo").value,
+        mensaje: document.getElementById("mensaje").value,
+        instalacion: document.getElementById("instalacion").value,
+        origen: document.getElementById("guardia").value
+    };
+
+    fetch("https://central.bermongroup.cl/evento", {
+        method: "POST",
+        headers: {"Content-Type":"application/json"},
+        body: JSON.stringify(data)
+    })
+    .then(() => {
+        alert("Evento enviado correctamente");
+        document.getElementById("mensaje").value = "";
+    })
+    .catch(() => alert("Error al enviar"));
+}
+</script>
+
+</body>
+</html>

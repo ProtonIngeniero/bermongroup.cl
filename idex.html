@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bermon Group | Ingeniería en Seguridad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b0f14;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            letter-spacing: 3px;
+        }
+
+        header p {
+            color: #aaa;
+            font-size: 1.1em;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #222;
+            padding-bottom: 10px;
+        }
+
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #111;
+            padding: 20px;
+            border: 1px solid #222;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #1f6feb;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            margin-top: 40px;
+            background: #0d1117;
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #222;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>BERMON GROUP</h1>
+    <p><strong>Control y visibilidad total de su operación en tiempo real.</strong></p>
+    <p>Transformamos datos operativos en decisiones.</p>
+</header>
+
+<section>
+    <h2>Soluciones</h2>
+    <div class="productos">
+        <div class="card">
+            <h3>Central de Control Operativo</h3>
+            <p>
+                Supervise instalaciones, gestione incidentes y coordine recursos
+                desde una única plataforma. Información inmediata para actuar sin demoras.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Consulta Precios</h3>
+            <p>
+                Entrega información precisa al instante,
+                mejora la experiencia del cliente y reduce fricciones en sala.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Gestión Inteligente de Rondas</h3>
+            <p>
+                Cumplimiento verificable de servicios con trazabilidad digital,
+                reportes automáticos y respaldo ante auditorías.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Experiencia Operativa</h2>
+    <p style="text-align:center;">
+        Soluciones desarrolladas desde la experiencia real en seguridad,
+        retail e instalaciones críticas.
+        Diseñadas para operar bajo presión y entregar información confiable
+        cuando más se necesita.
+    </p>
+</section>
+
+<section>
+    <h2>Acceso a Plataformas</h2>
+    <p style="text-align:center;">
+        Ingrese a nuestras soluciones operativas en línea.
+    </p>
+    <p style="text-align:center;">
+        <a class="btn" href="https://central.bermongroup.cl" target="_blank">Central de Control</a>
+        <a class="btn" href="https://consulta.bermongroup.cl" target="_blank">Consulta Precios</a>
+    </p>
+</section>
+
+<section>
+    <h2>Contacto</h2>
+    <p style="text-align:center;">
+        Hablemos sobre cómo optimizar su operación.
+    </p>
+    <p style="text-align:center;">
+        contacto@bermongroup.cl
+    </p>
+</section>
+
+<footer>
+    <p><strong>Bermon Group</strong></p>
+    <p>Ingeniería en Seguridad y Soluciones Tecnológicas</p>
+    <p>© 2026 · Todos los derechos reservados</p>
+</footer>
+
+<audio id="vozBermon" preload="auto">
+  <source src="audio/bienvenida_bermon.mp3?v=1" type="audio/mpeg">
+</audio>
+
+<script>
+window.addEventListener("pointerdown", () => {
+    document.getElementById("vozBermon").play();
+}, { once: true });
+</script>
+
+</body>
+</html>
